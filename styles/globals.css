@@ -1,9 +1,36 @@
+ /* Typekit */
+@import url("https://use.typekit.net/cib4sgm.css");
+
+/* TailwindCss Init */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* Fluid Typography */
+  --ft-sm: clamp(0.8rem, 0.23vw + 0.75rem, 0.94rem);
+  --ft-base: clamp(1rem, 0.42vw + 0.92rem, 1.25rem);
+  --ft-md: clamp(1.25rem, 0.69vw + 1.11rem, 1.67rem);
+  --ft-lg: clamp(1.56rem, 1.1vw + 1.34rem, 2.22rem);
+  --ft-xl: clamp(1.95rem, 1.68vw + 1.62rem, 2.96rem);
+  --ft-xxl: clamp(2.44rem, 2.51vw + 1.94rem, 3.95rem);
+  --ft-xxxl: clamp(3.05rem, 3.68vw + 2.32rem, 5.26rem);
+  /* Fluid Line Height */
+  --fl-sm: clamp(0.8em, 0.23vw + 0.75rem, 1em);
+  --fl-base: clamp(1.2em, 0.42vw + 0.92em, 1.8em);
+  --fl-md: clamp(1.8em, 0.69vw + 1.11em, 2em);
+  --fl-lg: clamp(2em, 1.1vw + 1.34em, 2.2em);
+  /* Colors */
+  --primary: #403D39;
+  --secondary: #F5EBE0;
+  --accent: #CCC5B9;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: hero-new, sans-serif;
 }
 
 a {
@@ -14,3 +41,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* FLUID TYPE */
+.ft-content {
+  font-size: var(--ft-base);
+  line-height: var(--fl-base);
+}
+
+.ft-heading {
+  font-size: var(--ft-xxxl);
+  line-height: var(--fl-lg);
+  color: var(--primary);
+}
+
