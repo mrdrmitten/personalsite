@@ -1,4 +1,4 @@
-
+import Nav from '../../elements/Nav/Nav'
 
 type Props = {
   children: React.ReactNode
@@ -8,7 +8,12 @@ type Props = {
 const DefaultLayout = ({ children }: Props) => {
 
   return (
-		
+    <>
+      <Nav />
+      <div>
+        {children}
+      </div>
+    </>
 
 	)
 }
