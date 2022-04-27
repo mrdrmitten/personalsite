@@ -8,9 +8,10 @@ module.exports = {
 			title: ['cortado, hero-new, sans-serif'],
 		},
 		colors: {
-			primary: '#403D39',
-			secondary: '#F5EBE0',
-			accent: '#CCC5B9',
+			primary: '#3C3C3C',
+			secondary: '#F5F5F5',
+			accent: '#FF5A5F',
+			'accent-blue': '#087E8B',
 		},
 		extend: {},
 	},
