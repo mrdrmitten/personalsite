@@ -12,6 +12,7 @@ const ThemeToggle = dynamic(
 	}
 )
 
+
 const MobileMask = () => {
 	return (
 		<div id="mobileMask" className={`${styles.mobileMask} hidden`}></div>
@@ -39,7 +40,7 @@ const handleClick = (t1 : number, t2 : number) => {
 	]
   setTimeout(() => svgs.map((svg) => svg.classList.toggle('hidden')), t1)
   setTimeout(() => cls.map((c) => drawer?.classList.toggle(c)), t2)
-  
+
   btn?.classList.toggle(`${styles.hamBtnRotate}`)
 	mask ? mask.classList.toggle('hidden') : ''
 }
@@ -75,7 +76,7 @@ const Nav = () => {
 			const mask = document.getElementById('mobileMask')
 				? document.getElementById('mobileMask')
 				: null
-			
+
 			mask?.addEventListener('click', () => {
 				handleClick(100, 120)
 			})
