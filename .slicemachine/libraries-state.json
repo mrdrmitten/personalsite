@@ -1,0 +1,84 @@
+{
+  "slices": {
+    "components": {
+      "test_card": {
+        "library": "slices",
+        "id": "test_card",
+        "name": "TestCard",
+        "description": "TestCard",
+        "model": {
+          "id": "test_card",
+          "type": "SharedSlice",
+          "name": "TestCard",
+          "description": "TestCard",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TestCard",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "fid": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Fid",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "test_card",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Enhance integrated functionalities",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Quis enim do dolor voluptate commodo mollit proident. Quis nisi ex et sit aliquip in est ea proident ad et.",
+                  "spans": []
+                }
+              ],
+              "fid": "embrace clicks-and-mortar e-markets"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}
