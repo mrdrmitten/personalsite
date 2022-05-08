@@ -28,6 +28,9 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# Slice Machine Config
+sm.json
+
 # vercel
 .vercel
 

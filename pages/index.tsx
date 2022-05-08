@@ -1,7 +1,8 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import DefaultLayout from '../components/layout/Default/DefaultLayout'
-import { PrismicText, PrismicRichText, } from '@prismicio/react'
+import LandingTemp from '../components/templates/Landing/Landing'
+import { PrismicRichText } from '@prismicio/react'
 import { createClient } from '../prismicio'
 import { FC } from 'react'
 
@@ -17,29 +18,11 @@ const Home: FC<HomeProps> = ({ page }) => {
         <title>Ray Magner | React Front-end Developer</title>
         <meta
           name="description"
-          content="Personal website of Web Dev, Ray Magner"
+          content="Ray Magner: Front-end Developer | Dad | Nerd"
         />
         <link rel="icon" href="/icon.jpg" />
       </Head>
-      {/* <div className="h-[2000px] w-full"></div> */}
-      <div id="1" className="ft-heading font-title text-primary">
-        <PrismicText field={page.data.greeting} />
-      </div>
-      <div className="">
-        <PrismicText field={page.data.description} />
-      </div>
-      <div className="">
-        {page.data.slices.map((card : any) => {
-          return (
-						<div key={card.primary.fid}>
-							<div className="ft-heading font-title">
-								<PrismicText field={card.primary.title} />
-							</div>
-							<PrismicText field={card.primary.description} />
-						</div>
-					)
-        })}
-      </div>
+      <LandingTemp page={page} />
     </DefaultLayout>
   )
 }

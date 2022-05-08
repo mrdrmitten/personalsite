@@ -66,6 +66,8 @@ a {
 
 body {
   background: var(--color-bg-primary);
+  max-width: 1800px;
+  margin: auto;
   color: var(--color-text-primary);
   transition: background 0.25s ease-in-out;
 }
@@ -73,12 +75,12 @@ body {
 /* FLUID TYPE */
 .ft-content {
   font-size: var(--ft-base);
-  line-height: var(--fl-base);
+  line-height: calc(var(--fl-base) + .2em);
   color: var(--color-text-primary);
 }
 
 .ft-heading {
   font-size: var(--ft-xxxl);
-  line-height: var(--fl-lg);
+  line-height: var(--fl-md);
   color: var(--color-text-primary);
 }
