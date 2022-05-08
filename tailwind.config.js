@@ -5,7 +5,8 @@ module.exports = {
 	],
 	theme: {
 		fontFamily: {
-			title: ['cortado, hero-new, sans-serif'],
+			title: ['degular-display, hero-new, sans-serif'],
+			logo: ['cortado, hero-new, sans-serif'],
 		},
 		colors: {
 			primary: '#3C3C3C',

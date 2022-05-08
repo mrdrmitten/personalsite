@@ -26,7 +26,7 @@ const ToggleButton = styled.button`
     outline: none;
   }
   &:hover {
-    box-shadow: 0 0 5px 2px var(--color-bg-toggle);
+    box-shadow: 0 0 5px 2px var(--color-nav-hover);
   },
 `
 

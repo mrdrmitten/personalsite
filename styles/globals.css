@@ -36,23 +36,27 @@ body {
 
 body,
 body[data-theme="light"] {
-  --color-text-primary: #3C3C3C;
-  --color-text-secondary: #FF5A5F;
-  --color-bg-primary: #F5F5F5;
-  --color-bg-toggle: #3C3C3C;
-  --color-bg-icon: #F5F5F5;
-  --color-mask: #3C3C3C;
+  --color-text-primary: var(--primary);
+  --color-text-secondary: var(--secondary);
+  --color-bg-primary: var(--secondary);
+  --color-bg-toggle: var(--primary);
+  --color-bg-icon: var(--secondary);
+  --color-mask: var(--primary);
   --color-mask-opacity: .5;
+  --color-nav-hover: var(--accent-blue);
+  --color-nav-border: var(--accent);
 }
 
 body[data-theme="dark"] {
-  --color-text-primary: #F5F5F5;
-  --color-text-secondary: #FF5A5F;
-  --color-bg-primary: #3C3C3C;
-  --color-bg-toggle: #F5F5F5;
-  --color-bg-icon: #3C3C3C;
-  --color-mask: #3C3C3C;
+  --color-text-primary: var(--secondary);
+  --color-text-secondary: var(--secondary);
+  --color-bg-primary: var(--primary);
+  --color-bg-toggle: var(--secondary);
+  --color-bg-icon: var(--primary);
+  --color-mask: var(--primary);
   --color-mask-opacity: .9;
+  --color-nav-hover: var(--accent);
+  --color-nav-border: var(--accent-blue);
 }
 
 a {
@@ -66,21 +70,42 @@ a {
 
 body {
   background: var(--color-bg-primary);
-  max-width: 1800px;
-  margin: auto;
   color: var(--color-text-primary);
   transition: background 0.25s ease-in-out;
+  
+}
+
+body .layout-inner {
+  max-width: 1800px;
+  margin: auto;
+}
+
+ .ft-content > h2 {
+  font-size: var(--ft-xl);
+  line-height: var(--fl-base);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
 }
 
 /* FLUID TYPE */
 .ft-content {
   font-size: var(--ft-base);
-  line-height: calc(var(--fl-base) + .2em);
+  line-height: calc(var(--fl-base) + .4em);
   color: var(--color-text-primary);
+  padding: 0 1rem;
 }
 
 .ft-heading {
-  font-size: var(--ft-xxxl);
-  line-height: var(--fl-md);
+  font-size: var(--ft-xxl);
+  line-height: var(--fl-base);
+  font-weight: 500;
   color: var(--color-text-primary);
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .ft-heading {
+    font-size: var(--ft-xxxl);
+  }
 }

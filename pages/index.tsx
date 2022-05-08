@@ -2,7 +2,6 @@ import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import DefaultLayout from '../components/layout/Default/DefaultLayout'
 import LandingTemp from '../components/templates/Landing/Landing'
-import { PrismicRichText } from '@prismicio/react'
 import { createClient } from '../prismicio'
 import { FC } from 'react'
 
