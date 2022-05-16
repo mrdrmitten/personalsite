@@ -1,0 +1,26 @@
+.container {
+	background: var(--color-nav-border);
+	box-shadow: 0 0 5px 3px var(--color-nav-hover);
+}
+
+.container label {
+	font-size: var(--ft-base);
+	color: var(--secondary);
+}
+
+.container button {
+	background: var(--color-nav-hover);
+	color: var(--secondary);
+}
+
+.buttonSuccess {
+	background: var(--success) !important;
+	transition: background 0.2s ease-in;
+}
+
+.container input,
+.container textarea {
+	color: var(--primary);
+	font-size: var(--ft-base);
+	padding: 5px;
+}

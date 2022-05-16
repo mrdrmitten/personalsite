@@ -1,7 +1,8 @@
 import { PrismicRichText } from '@prismicio/react'
+import Image from 'next/image'
 
 const LandingTemp = (props : any) => {
-  const { page } = props
+	const { page } = props
 
 
   // Todo: Make Card Component
@@ -14,17 +15,32 @@ const LandingTemp = (props : any) => {
 				<PrismicRichText field={page.data.description} />
 			</div>
 			<div className="ft-content">
-				{page.data.slices.map((card: any) => {
-					return (
-						<div key={card.primary.fid}>
-							<div className="ft-heading font-title uppercase">
-								<PrismicRichText field={card.primary.title} />
+				{page.data.slices.map((slice: any) => {
+					if (slice.slice_type === 'test_card') {
+						return (
+							<div key={slice.primary.fid}>
+								<div className="ft-heading font-title uppercase">
+									<PrismicRichText field={slice.primary.title} />
+								</div>
+								<div className="">
+									<PrismicRichText field={slice.primary.description} />
+								</div>
 							</div>
-							<div className="">
-								<PrismicRichText field={card.primary.description} />
+						)
+					} else if (slice.slice_type === 'image_slice') {
+						return (
+							<div key={slice.primary.fid} className='relative h-[40%] w-[40%]'>
+								<Image
+									src={slice.primary.image.url}
+									alt={slice.primary.image.alt}
+									height={400}
+									width={400}
+									objectFit='cover'
+									className='rounded-lg object-center'
+								/>
 							</div>
-						</div>
-					)
+						)
+					}
 				})}
 			</div>
 		</div>

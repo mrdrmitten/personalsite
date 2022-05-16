@@ -8,3 +8,7 @@ div.footerShadow {
 .footerBorder {
   background: var(--color-text-primary);
 }
+
+.footerHeading {
+  font-size: var(--ft-lg);
+}

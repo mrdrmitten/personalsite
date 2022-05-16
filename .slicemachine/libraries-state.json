@@ -1,6 +1,71 @@
 {
   "slices": {
     "components": {
+      "image_slice": {
+        "library": "slices",
+        "id": "image_slice",
+        "name": "ImageSlice",
+        "description": "ImageSlice",
+        "model": {
+          "id": "image_slice",
+          "type": "SharedSlice",
+          "name": "ImageSlice",
+          "description": "ImageSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ImageSlice",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "fid": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Fid",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "image_slice",
+            "items": [],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+              },
+              "fid": "whiteboard best-of-breed platforms"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "test_card": {
         "library": "slices",
         "id": "test_card",

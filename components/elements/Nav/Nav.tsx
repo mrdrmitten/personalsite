@@ -20,14 +20,14 @@ const MobileMask = () => {
 	)
 }
 
-const ScrollPage = (id : number) => {
+/* const ScrollPage = (id : number) => {
     const target = document.getElementById(`${id}`)
     const view = window.matchMedia('(max-width: 1024px)')
     target?.scrollIntoView({ behavior: 'smooth' })
     if (view.matches) {
       handleClick(100, 120)
     }
-}
+} */
 
 const handleClick = (t1 : number, t2 : number) => {
   const btn = document.getElementById('hamBtn')
@@ -139,9 +139,9 @@ const Nav = () => {
 					<Link href="/aboutme">
 						<a className={styles.btn}>About</a>
 					</Link>
-					<button onClick={() => ScrollPage(3)} className={styles.btn}>
-						Contact
-					</button>
+					<a className={`${styles.btn} hover:line-through cursor-pointer`}>
+						Blog
+					</a>
 				</div>
 				<div className="ml-auto p-4">
 					<ThemeToggle />

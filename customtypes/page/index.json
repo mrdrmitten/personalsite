@@ -37,6 +37,9 @@
           "choices": {
             "test_card": {
               "type": "SharedSlice"
+            },
+            "image_slice": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -1,0 +1,16 @@
+div.imageFix > span {
+	display: block !important;
+	box-shadow: 0 10px 15px -3px var(--color-text-primary),
+		0 4px 6px -4px var(--color-text-primary);
+	border-radius: 0.5rem;
+}
+
+.container button {
+	background: var(--color-nav-hover);
+	color: var(--secondary);
+	font-size: var(--ft-md);
+}
+
+.container button:hover {
+	box-shadow: 0 0 3px 1px var(--color-nav-hover);
+}

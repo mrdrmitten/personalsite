@@ -1,5 +1,5 @@
- /* Typekit */
-@import url("https://use.typekit.net/cib4sgm.css");
+/* Typekit */
+@import url('https://use.typekit.net/cib4sgm.css');
 
 /* TailwindCss Init */
 @tailwind base;
@@ -7,105 +7,109 @@
 @tailwind utilities;
 
 html {
-  /* Fluid Typography */
-  --ft-sm: clamp(0.8rem, 0.23vw + 0.75rem, 0.94rem);
-  --ft-base: clamp(1rem, 0.42vw + 0.92rem, 1.25rem);
-  --ft-md: clamp(1.25rem, 0.69vw + 1.11rem, 1.67rem);
-  --ft-lg: clamp(1.56rem, 1.1vw + 1.34rem, 2.22rem);
-  --ft-xl: clamp(1.95rem, 1.68vw + 1.62rem, 2.96rem);
-  --ft-xxl: clamp(2.44rem, 2.51vw + 1.94rem, 3.95rem);
-  --ft-xxxl: clamp(3.05rem, 3.68vw + 2.32rem, 5.26rem);
-  /* Fluid Line Height */
-  --fl-sm: clamp(0.8em, 0.23vw + 0.75rem, 1em);
-  --fl-base: clamp(1.2em, 0.42vw + 0.92em, 1.8em);
-  --fl-md: clamp(1.8em, 0.69vw + 1.11em, 2em);
-  --fl-lg: clamp(2em, 1.1vw + 1.34em, 2.2em);
-  /* Colors */
-  --primary: #3C3C3C;
-  --secondary: #F5F5F5;
-  --accent: #FF5A5F;
-  --accent-blue: #087E8B;
+	/* Fluid Typography */
+	--ft-sm: clamp(0.8rem, 0.23vw + 0.75rem, 0.94rem);
+	--ft-base: clamp(1rem, 0.42vw + 0.92rem, 1.25rem);
+	--ft-md: clamp(1.25rem, 0.69vw + 1.11rem, 1.67rem);
+	--ft-lg: clamp(1.56rem, 1.1vw + 1.34rem, 2.22rem);
+	--ft-xl: clamp(1.95rem, 1.68vw + 1.62rem, 2.96rem);
+	--ft-xxl: clamp(2.44rem, 2.51vw + 1.94rem, 3.95rem);
+	--ft-xxxl: clamp(3.05rem, 3.68vw + 2.32rem, 5.26rem);
+	/* Fluid Line Height */
+	--fl-sm: clamp(0.8em, 0.23vw + 0.75rem, 1em);
+	--fl-base: clamp(1.2em, 0.42vw + 0.92em, 1.8em);
+	--fl-md: clamp(1.8em, 0.69vw + 1.11em, 2em);
+	--fl-lg: clamp(2em, 1.1vw + 1.34em, 2.2em);
+	/* Colors */
+	--primary: #3c3c3c;
+	--secondary: #f5f5f5;
+	--accent: #ff5a5f;
+	--accent-blue: #087e8b;
+	--success: #60d394;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: hero-new, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: hero-new, sans-serif;
 }
 
 body,
-body[data-theme="light"] {
-  --color-text-primary: var(--primary);
-  --color-text-secondary: var(--secondary);
-  --color-bg-primary: var(--secondary);
-  --color-bg-toggle: var(--primary);
-  --color-bg-icon: var(--secondary);
-  --color-mask: var(--primary);
-  --color-mask-opacity: .5;
-  --color-nav-hover: var(--accent-blue);
-  --color-nav-border: var(--accent);
+body[data-theme='light'] {
+	--color-text-primary: var(--primary);
+	--color-text-secondary: var(--secondary);
+	--color-bg-primary: var(--secondary);
+	--color-bg-toggle: var(--primary);
+	--color-bg-icon: var(--secondary);
+	--color-mask: var(--primary);
+	--color-mask-opacity: 0.5;
+	--color-nav-hover: var(--accent-blue);
+	--color-nav-border: var(--accent);
 }
 
-body[data-theme="dark"] {
-  --color-text-primary: var(--secondary);
-  --color-text-secondary: var(--secondary);
-  --color-bg-primary: var(--primary);
-  --color-bg-toggle: var(--secondary);
-  --color-bg-icon: var(--primary);
-  --color-mask: var(--primary);
-  --color-mask-opacity: .9;
-  --color-nav-hover: var(--accent);
-  --color-nav-border: var(--accent-blue);
+body[data-theme='dark'] {
+	--color-text-primary: var(--secondary);
+	--color-text-secondary: var(--secondary);
+	--color-bg-primary: var(--primary);
+	--color-bg-toggle: var(--secondary);
+	--color-bg-icon: var(--primary);
+	--color-mask: var(--primary);
+	--color-mask-opacity: 0.9;
+	--color-nav-hover: var(--accent);
+	--color-nav-border: var(--accent-blue);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  transition: background 0.25s ease-in-out;
-  
+	background: var(--color-bg-primary);
+	color: var(--color-text-primary);
+	transition: background 0.25s ease-in-out;
 }
 
 body .layout-inner {
-  max-width: 1800px;
-  margin: auto;
+	max-width: 1800px;
+	margin: auto;
 }
 
- .ft-content > h2 {
-  font-size: var(--ft-xl);
-  line-height: var(--fl-base);
-  font-weight: 500;
-  color: var(--color-text-primary);
-  text-transform: uppercase;
+footer svg:hover {
+	fill: var(--color-nav-hover);
+}
+
+.ft-content > h2 {
+	font-size: var(--ft-xl);
+	line-height: var(--fl-base);
+	font-weight: 500;
+	color: var(--color-text-primary);
+	text-transform: uppercase;
 }
 
 /* FLUID TYPE */
 .ft-content {
-  font-size: var(--ft-base);
-  line-height: calc(var(--fl-base) + .4em);
-  color: var(--color-text-primary);
-  padding: 0 1rem;
+	font-size: var(--ft-base);
+	line-height: calc(var(--fl-base) + 0.4em);
+	color: var(--color-text-primary);
+	padding: 0 1rem;
 }
 
 .ft-heading {
-  font-size: var(--ft-xxl);
-  line-height: var(--fl-base);
-  font-weight: 500;
-  color: var(--color-text-primary);
-  padding: 1rem 0;
+	font-size: var(--ft-xxl);
+	line-height: var(--fl-base);
+	font-weight: 500;
+	color: var(--color-text-primary);
+	padding: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
-  .ft-heading {
-    font-size: var(--ft-xxxl);
-  }
+	.ft-heading {
+		font-size: var(--ft-xxxl);
+	}
 }
